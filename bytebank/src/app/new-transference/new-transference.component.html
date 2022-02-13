@@ -1,0 +1,31 @@
+<section class="container">
+  <form class="form" (ngSubmit)="transfer()">
+    <h2 class="form_title">New tranference</h2>
+
+    <div class="form-field">
+      <label class="form-field_label" for="value">Value</label>
+      <input
+        class="form-field_input"
+        id="valor"
+        type="text"
+        [(ngModel)]="value"
+        name="value"
+      />
+    </div>
+
+    <div class="form-field">
+      <label class="form-field_label" for="Destiny">Destiny</label>
+      <input
+        class="form-field_input"
+        id="Destiny"
+        type="text"
+        [(ngModel)]="destiny"
+        name="destiny"
+      />
+    </div>
+
+    <div class="button-wrapper">
+      <button class="button" type="submit">Transfer</button>
+    </div>
+  </form>
+</section>
